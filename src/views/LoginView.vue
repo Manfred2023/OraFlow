@@ -11,7 +11,7 @@ const error = ref('')
 const login = () => {
   if (email.value === 'admin@oraflow.com' && password.value === '123456') {
     localStorage.setItem('authenticated', 'true')
-    router.push(name = 'Dashboard')
+    router.push((name = 'program'))
   } else {
     error.value = 'Email ou mot de passe incorrect'
   }
